@@ -1,0 +1,29 @@
+Hello everyone!!
+
+
+this is a django project in which we have implemented the user authentication login form and signup form
+
+to run this project 
+	$ python manage.py runserver
+
+if django is not installed,then create a virtual enviournment and install crispy forms,django in the enviournment then run the above command
+
+
+we have used to crispy forms for better user experience 
+so to run this project you have install crispy forms 
+
+
+	$ pip install django-crispy-forms
+
+
+name of the project:intellify_project
+application name: accounts
+
+
+for login we have used django login view we have imported it from django.contrib.auth
+
+for signup we have created a signup form which is present in forms.py 
+we have imported itg in views.py to create a signup view
+
+
+we have used static files (css) to make it look better

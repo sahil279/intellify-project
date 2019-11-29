@@ -1,0 +1,49 @@
+
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signup page</title>
+</head>
+<body>
+
+{% load static %}
+
+<div class="col-md-8">
+                      
+                        
+
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="{% static 'accounts/main.css' %}">
+  
+
+
+  <div class="content-section">
+    <form method="post">
+      {% csrf_token %}
+      <fieldset class="form-group">
+        <legend class="border-bottom mb-4">Join Today</legend>
+          {{ form|crispy }}
+      </fieldset>
+      <div class="form-group">
+        <button class="btn btn-outline-info" type="submit"> Sign up</button>
+
+      </div>
+      </form>
+      <div class="border-top pt-3">
+        <small class="text-muted">
+        Already have an Account?</small>
+        <a class="ml-2" href="{% url 'login' %}">Log In</a>
+
+      </div>
+
+  </div>
+
+</body>
+</html>
+</body>
+</html>
